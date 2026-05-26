@@ -21,10 +21,10 @@ int main() {
     y.templateMethod();
     std::string output = redirect.str();
 
-    if (output.find("PrimitiveOperationA implementation from X") == std::string>
-    if (output.find("PrimitiveOperationB implementation from X") == std::string>
-    if (output.find("PrimitiveOperationA implementation from Y") == std::string>
-    if (output.find("PrimitiveOperationB implementation from Y") == std::string>
+    if (output.find("PrimitiveOperationA implementation from X") == std::string::npos) return 1;
+    if (output.find("PrimitiveOperationB implementation from X") == std::string::npos) return 1;
+    if (output.find("PrimitiveOperationA implementation from Y") == std::string::npos) return 1;
+    if (output.find("PrimitiveOperationB implementation from Y") == std::string::npos) return 1;
 
     std::cout << "All tests passed!\n";
     return 0;
