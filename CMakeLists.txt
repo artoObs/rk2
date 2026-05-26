@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
 project(TemplateMethod CXX)
-add_executable(demo main.cpp ConcreteClassX.cpp ConcreteClassY.cpp AbstractClass.cpp)
+add_executable(demo main.cpp ConcreteClassX.cpp ConcreteClassY.cpp AbstractClas>
+add_executable(test_method test_method.cpp ConcreteClassX.cpp ConcreteClassY.cp>
 enable_testing()
-add_test(NAME test COMMAND demo)
-set_tests_properties(test PROPERTIES PASS_REGULAR_EXPRESSION "PrimitiveOperationA.*PrimitiveOperationB")
+add_test(NAME test_1 COMMAND test_method)
 set(CPACK_GENERATOR "DEB")
 set(CPACK_PACKAGE_NAME "template-method")
 set(CPACK_DEBIAN_PACKAGE_MAINTAINER "User <user@example.com>")
