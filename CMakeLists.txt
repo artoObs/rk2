@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(TemplateMethod CXX)
-add_executable(demo main.cpp ConcreteClassX.cpp ConcreteClassY.cpp AbstractClas>
-add_executable(test_method test_method.cpp ConcreteClassX.cpp ConcreteClassY.cp>
+add_executable(demo main.cpp ConcreteClassX.cpp ConcreteClassY.cpp AbstractClass.cpp)
+add_executable(test_method test_method.cpp ConcreteClassX.cpp ConcreteClassY.cpp AbstractClass.cpp)
 enable_testing()
 add_test(NAME test_1 COMMAND test_method)
 set(CPACK_GENERATOR "DEB")
